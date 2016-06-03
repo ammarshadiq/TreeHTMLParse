@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 /build/
 /dist/
 /nbproject/private/
 /test/
 /xtcp-configs/
 /html2xhtml/html2xhtml-1.3
+=======
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+>>>>>>> f52aa273e83b1a81ea8e5ff2ab4b409846d8b000
