@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+      <Border info="null"/>
+    </Property>
+    <Property name="name" type="java.lang.String" value="Form" noResource="true"/>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="fieldLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="typeLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="typeComboBox" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="perEntryDelimiterLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="perEntryDelimiterComboBox" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="customDelimiterLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="perEntryDelimiterTextField" pref="85" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="fieldNameTextField" pref="577" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="fieldLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="fieldNameTextField" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="typeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="typeComboBox" linkSize="1" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                  <Component id="perEntryDelimiterLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="perEntryDelimiterComboBox" linkSize="1" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                  <Component id="customDelimiterLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="perEntryDelimiterTextField" linkSize="1" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="fieldLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="org/emje/treehtmlparse/xpathtree/panel/Bundle.properties" key="XPathFieldItem.fieldLabel.text" replaceFormat="org.openide.util.NbBundle.getMessage({sourceFileName}.class, &quot;{key}&quot;)"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="fieldLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fieldNameTextField">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="org/emje/treehtmlparse/xpathtree/panel/Bundle.properties" key="XPathFieldItem.fieldNameTextField.text" replaceFormat="org.openide.util.NbBundle.getMessage({sourceFileName}.class, &quot;{key}&quot;)"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="fieldNameTextField" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="fieldNameTextFieldFocusGained"/>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="fieldNameTextFieldFocusLost"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="fieldNameTextFieldKeyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="typeLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="org/emje/treehtmlparse/xpathtree/panel/Bundle.properties" key="XPathFieldItem.typeLabel.text" replaceFormat="org.openide.util.NbBundle.getMessage({sourceFileName}.class, &quot;{key}&quot;)"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="typeLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="typeComboBox">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="DejaVu Sans" size="12" style="0"/>
+        </Property>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="3">
+            <StringItem index="0" value="Continuos Text"/>
+            <StringItem index="1" value="Segmented Text"/>
+            <StringItem index="2" value="Outlinks"/>
+          </StringArray>
+        </Property>
+        <Property name="name" type="java.lang.String" value="typeComboBox" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="typeComboBoxActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="perEntryDelimiterLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="DejaVu Sans" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="org/emje/treehtmlparse/xpathtree/panel/Bundle.properties" key="XPathFieldItem.perEntryDelimiterLabel.text_1" replaceFormat="org.openide.util.NbBundle.getMessage({sourceFileName}.class, &quot;{key}&quot;)"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="perEntryDelimiterLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="perEntryDelimiterTextField">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="DejaVu Sans" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="org/emje/treehtmlparse/xpathtree/panel/Bundle.properties" key="XPathFieldItem.perEntryDelimiterTextField.text_1" replaceFormat="org.openide.util.NbBundle.getMessage({sourceFileName}.class, &quot;{key}&quot;)"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="perEntryDelimiterTextField" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="perEntryDelimiterTextFieldKeyTyped"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="perEntryDelimiterComboBox">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="DejaVu Sans" size="12" style="0"/>
+        </Property>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="10">
+            <StringItem index="0" value="Space [ ]"/>
+            <StringItem index="1" value="Comma [,]"/>
+            <StringItem index="2" value="Comma &amp; Space [, ]"/>
+            <StringItem index="3" value="Tab [\t]"/>
+            <StringItem index="4" value="New Line [\n]"/>
+            <StringItem index="5" value="Semi Colon [;]"/>
+            <StringItem index="6" value="Colon [:]"/>
+            <StringItem index="7" value="Dash [-]"/>
+            <StringItem index="8" value="Empty Delimiter []"/>
+            <StringItem index="9" value="Custom ..."/>
+          </StringArray>
+        </Property>
+        <Property name="name" type="java.lang.String" value="perEntryDelimiterComboBox" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="perEntryDelimiterComboBoxActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="customDelimiterLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="DejaVu Sans" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
+          <ResourceString bundle="org/emje/treehtmlparse/xpathtree/panel/Bundle.properties" key="XPathFieldItem.customDelimiterLabel.text" replaceFormat="org.openide.util.NbBundle.getMessage({sourceFileName}.class, &quot;{key}&quot;)"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="customDelimiterLabel" noResource="true"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

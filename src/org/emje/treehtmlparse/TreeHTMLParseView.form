@@ -1,0 +1,990 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.7" maxVersion="1.7">
+  <NonVisualComponents>
+    <Container class="javax.swing.JPanel" name="mainPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="mainPanel" noResource="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="chooser = new JFileChooser();"/>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="chooser.setCurrentDirectory(new File(&quot;.&quot;));&#xa;chooser.addChoosableFileFilter(configFileFilter);&#xa;chooser.addChoosableFileFilter(markupFileFilter);&#xa;chooser.setAcceptAllFileFilterUsed(true);"/>
+      </AuxValues>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="mainSplitPane" alignment="0" pref="657" max="32767" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="newButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="openButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="saveButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="locationBarTextField" pref="521" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="goToAddressButton" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+              <Component id="appHeaderSeparator" alignment="0" pref="681" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="newButton" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="openButton" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="saveButton" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="goToAddressButton" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="locationBarTextField" linkSize="1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="appHeaderSeparator" min="-2" pref="6" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="mainSplitPane" pref="602" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JSplitPane" name="mainSplitPane">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="null"/>
+            </Property>
+            <Property name="dividerLocation" type="int" value="200"/>
+            <Property name="dividerSize" type="int" value="5"/>
+            <Property name="name" type="java.lang.String" value="mainSplitPane" noResource="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="leftPanel">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="leftPanel" noResource="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                  <JSplitPaneConstraints position="left"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="leftSplitPane" alignment="0" pref="200" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="leftSplitPane" alignment="0" pref="602" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JSplitPane" name="leftSplitPane">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                        <EmptyBorder/>
+                      </Border>
+                    </Property>
+                    <Property name="dividerLocation" type="int" value="300"/>
+                    <Property name="dividerSize" type="int" value="5"/>
+                    <Property name="orientation" type="int" value="0"/>
+                    <Property name="name" type="java.lang.String" value="leftSplitPane" noResource="true"/>
+                  </Properties>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
+                  <SubComponents>
+                    <Container class="javax.swing.JPanel" name="xPathTreePanel">
+                      <Properties>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
+                        </Property>
+                        <Property name="name" type="java.lang.String" value="xPathTreePanel" noResource="true"/>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                          <JSplitPaneConstraints position="right"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="xPathTreeMoveUpButton" min="-2" max="-2" attributes="1"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="xPathTreeMoveDownButton" min="-2" max="-2" attributes="1"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="xPathTreeRemoveButton" min="-2" max="-2" attributes="1"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="xPathTreeAddButton" min="-2" max="-2" attributes="1"/>
+                                  <EmptySpace pref="40" max="32767" attributes="0"/>
+                                  <Component id="xPathTreeClearButton" min="-2" max="-2" attributes="1"/>
+                              </Group>
+                              <Component id="xPathTreeScrollPane" alignment="0" pref="198" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="xPathTreeScrollPane" pref="262" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="xPathTreeMoveUpButton" min="-2" max="-2" attributes="0"/>
+                                      <Component id="xPathTreeMoveDownButton" min="-2" max="-2" attributes="0"/>
+                                      <Component id="xPathTreeRemoveButton" min="-2" max="-2" attributes="0"/>
+                                      <Component id="xPathTreeAddButton" min="-2" max="-2" attributes="0"/>
+                                      <Component id="xPathTreeClearButton" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JScrollPane" name="xPathTreeScrollPane">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="xPathTreeScrollPane" noResource="true"/>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTree" name="xPathTree">
+                              <Properties>
+                                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                  <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                                    <EmptyBorder/>
+                                  </Border>
+                                </Property>
+                                <Property name="cellRenderer" type="javax.swing.tree.TreeCellRenderer" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                                  <Connection code="new org.emje.treehtmlparse.xpathtree.XPathTreeCellRenderer()" type="code"/>
+                                </Property>
+                                <Property name="name" type="java.lang.String" value="xPathTree" noResource="true"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="valueChanged" listener="javax.swing.event.TreeSelectionListener" parameters="javax.swing.event.TreeSelectionEvent" handler="xPathTreeValueChanged"/>
+                              </Events>
+                              <AuxValues>
+                                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="xPathTree.setSelectionRow(0);&#xa;entryItem.setXPathTree(xPathTree);&#xa;fieldItem.setXPathTree(xPathTree);&#xa;configItem.setXPathTree(xPathTree);"/>
+                                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTree(xPathTreeModel)"/>
+                              </AuxValues>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Component class="javax.swing.JButton" name="xPathTreeMoveUpButton">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                              <Connection component="xPathTreePanel" name="background" type="property"/>
+                            </Property>
+                            <Property name="font" type="java.awt.Font" resourceKey="xPathTreeMoveUpButton.font"/>
+                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                              <Image iconType="3" name="/org/emje/treehtmlparse/resources/xpathcomponentitems/go-up.png"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" resourceKey="xPathTreeMoveUpButton.text"/>
+                            <Property name="toolTipText" type="java.lang.String" resourceKey="xPathTreeMoveUpButton.toolTipText"/>
+                            <Property name="horizontalAlignment" type="int" value="2"/>
+                            <Property name="iconTextGap" type="int" value="0"/>
+                            <Property name="name" type="java.lang.String" value="xPathTreeMoveUpButton" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="xPathTreeMoveUpButtonActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="xPathTreeMoveDownButton">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" resourceKey="xPathTreeMoveDownButton.font"/>
+                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                              <Image iconType="3" name="/org/emje/treehtmlparse/resources/xpathcomponentitems/go-down.png"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" resourceKey="xPathTreeMoveDownButton.text"/>
+                            <Property name="toolTipText" type="java.lang.String" resourceKey="xPathTreeMoveDownButton.toolTipText"/>
+                            <Property name="horizontalAlignment" type="int" value="2"/>
+                            <Property name="name" type="java.lang.String" value="xPathTreeMoveDownButton" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="xPathTreeMoveDownButtonActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="xPathTreeRemoveButton">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" resourceKey="xPathTreeRemoveButton.font"/>
+                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                              <Image iconType="3" name="/org/emje/treehtmlparse/resources/xpathcomponentitems/list-remove.png"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" resourceKey="xPathTreeRemoveButton.text"/>
+                            <Property name="toolTipText" type="java.lang.String" resourceKey="xPathTreeRemoveButton.toolTipText"/>
+                            <Property name="horizontalAlignment" type="int" value="2"/>
+                            <Property name="name" type="java.lang.String" value="xPathTreeRemoveButton" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="xPathTreeRemoveButtonActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="xPathTreeAddButton">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" resourceKey="xPathTreeAddButton.font"/>
+                            <Property name="icon" type="javax.swing.Icon" resourceKey="xPathTreeAddButton.icon"/>
+                            <Property name="toolTipText" type="java.lang.String" resourceKey="xPathTreeAddButton.toolTipText"/>
+                            <Property name="horizontalAlignment" type="int" value="2"/>
+                            <Property name="name" type="java.lang.String" value="xPathTreeAddButton" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="xPathTreeAddButtonActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="xPathTreeClearButton">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" resourceKey="xPathTreeClearButton.font"/>
+                            <Property name="icon" type="javax.swing.Icon" resourceKey="xPathTreeClearButton.icon"/>
+                            <Property name="toolTipText" type="java.lang.String" resourceKey="xPathTreeClearButton.toolTipText"/>
+                            <Property name="horizontalAlignment" type="int" value="2"/>
+                            <Property name="name" type="java.lang.String" value="xPathTreeClearButton" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="xPathTreeClearButtonActionPerformed"/>
+                          </Events>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="HTMLTreePanel">
+                      <Properties>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
+                        </Property>
+                        <Property name="name" type="java.lang.String" value="HTMLTreePanel" noResource="true"/>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                          <JSplitPaneConstraints position="left"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="searchSourceTextField" pref="164" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="searchButton" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="treeScrollPane" alignment="0" pref="198" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="searchButton" linkSize="2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="searchSourceTextField" linkSize="2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="treeScrollPane" pref="265" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="javax.swing.JButton" name="searchButton">
+                          <Properties>
+                            <Property name="icon" type="javax.swing.Icon" resourceKey="searchButton.icon"/>
+                            <Property name="text" type="java.lang.String" resourceKey="searchButton.text"/>
+                            <Property name="toolTipText" type="java.lang.String" resourceKey="searchButton.toolTipText"/>
+                            <Property name="enabled" type="boolean" value="false"/>
+                            <Property name="name" type="java.lang.String" value="searchButton" noResource="true"/>
+                          </Properties>
+                        </Component>
+                        <Container class="javax.swing.JScrollPane" name="treeScrollPane">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="treeScrollPane" noResource="true"/>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTree" name="HTMLTree">
+                              <Properties>
+                                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                  <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                                    <EmptyBorder/>
+                                  </Border>
+                                </Property>
+                                <Property name="cellRenderer" type="javax.swing.tree.TreeCellRenderer" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                                  <Connection code="new org.emje.treehtmlparse.htmltree.HTMLTreeCellRenderer()" type="code"/>
+                                </Property>
+                                <Property name="name" type="java.lang.String" value="HTMLTree" noResource="true"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="valueChanged" listener="javax.swing.event.TreeSelectionListener" parameters="javax.swing.event.TreeSelectionEvent" handler="HTMLTreeValueChanged"/>
+                              </Events>
+                              <AuxValues>
+                                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTree(parse.getRootNode())"/>
+                              </AuxValues>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Component class="javax.swing.JTextField" name="searchSourceTextField">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="searchSourceTextField.text"/>
+                            <Property name="enabled" type="boolean" value="false"/>
+                            <Property name="name" type="java.lang.String" value="searchSourceTextField" noResource="true"/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="rightPanel">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="null"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="rightPanel" noResource="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                  <JSplitPaneConstraints position="right"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="rightSplitPane" alignment="0" pref="452" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="rightSplitPane" alignment="0" pref="602" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JSplitPane" name="rightSplitPane">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                    <Property name="dividerLocation" type="int" value="500"/>
+                    <Property name="dividerSize" type="int" value="5"/>
+                    <Property name="orientation" type="int" value="0"/>
+                    <Property name="name" type="java.lang.String" value="rightSplitPane" noResource="true"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="rightSplitPane.setDividerLocation(rightSplitPane.getHeight()-configItem.getPreferredSize().height);"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
+                  <SubComponents>
+                    <Container class="javax.swing.JPanel" name="browseViewPanel">
+                      <Properties>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
+                        </Property>
+                        <Property name="name" type="java.lang.String" value="browseViewPanel" noResource="true"/>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                          <JSplitPaneConstraints position="top"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="locationLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="locationComboBox" pref="338" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="copyLocationValueButton" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="ComponentViews" alignment="0" pref="452" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="locationLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="locationComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="copyLocationValueButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="ComponentViews" pref="466" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="javax.swing.JComboBox" name="locationComboBox">
+                          <Properties>
+                            <Property name="editable" type="boolean" value="true"/>
+                            <Property name="font" type="java.awt.Font" resourceKey="locationComboBox.font"/>
+                            <Property name="name" type="java.lang.String" value="locationComboBox" noResource="true"/>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="locationLabel">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" resourceKey="locationLabel.font"/>
+                            <Property name="text" type="java.lang.String" resourceKey="locationLabel.text"/>
+                            <Property name="name" type="java.lang.String" value="locationLabel" noResource="true"/>
+                          </Properties>
+                        </Component>
+                        <Container class="javax.swing.JTabbedPane" name="ComponentViews">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="null"/>
+                            </Property>
+                            <Property name="name" type="java.lang.String" value="ComponentViews" noResource="true"/>
+                          </Properties>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+                          <SubComponents>
+                            <Container class="javax.swing.JScrollPane" name="browseViewScrollPane">
+                              <Properties>
+                                <Property name="name" type="java.lang.String" value="browseViewScrollPane" noResource="true"/>
+                              </Properties>
+                              <AuxValues>
+                                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                              </AuxValues>
+                              <Constraints>
+                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                                  <JTabbedPaneConstraints tabName="Browser View">
+                                    <Property name="tabTitle" type="java.lang.String" resourceKey="browseViewScrollPane.TabConstraints.tabTitle"/>
+                                  </JTabbedPaneConstraints>
+                                </Constraint>
+                              </Constraints>
+
+                              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                              <SubComponents>
+                                <Component class="javax.swing.JEditorPane" name="browseViewEditorPane">
+                                  <Properties>
+                                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                      <Border info="null"/>
+                                    </Property>
+                                    <Property name="contentType" type="java.lang.String" resourceKey="browseViewEditorPane.contentType"/>
+                                    <Property name="editable" type="boolean" value="false"/>
+                                    <Property name="name" type="java.lang.String" value="browseViewEditorPane" noResource="true"/>
+                                  </Properties>
+                                  <AuxValues>
+                                    <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="//try {&#xa;//    browseViewEditorPane.setPage(&quot;file:///home/shadiq/NetBeansProjects/TreeHTMLParse/detik.html&quot;);&#xa;//} catch (IOException ioe) {&#xa;//    browseViewEditorPane.setText(&quot;&lt;font size=15 color=red&gt;ERROR!&lt;br&gt;&lt;/font&gt;&quot;+ioe.getMessage());&#xa;//    Exceptions.printStackTrace(ioe);&#xa;//}"/>
+                                  </AuxValues>
+                                </Component>
+                              </SubComponents>
+                            </Container>
+                            <Container class="javax.swing.JScrollPane" name="sourceViewScrollPane">
+                              <Properties>
+                                <Property name="name" type="java.lang.String" value="sourceViewScrollPane" noResource="true"/>
+                              </Properties>
+                              <Constraints>
+                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                                  <JTabbedPaneConstraints tabName="Source View">
+                                    <Property name="tabTitle" type="java.lang.String" resourceKey="sourceViewScrollPane.TabConstraints.tabTitle"/>
+                                  </JTabbedPaneConstraints>
+                                </Constraint>
+                              </Constraints>
+
+                              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                              <SubComponents>
+                                <Component class="javax.swing.JTextArea" name="sourceViewTextArea">
+                                  <Properties>
+                                    <Property name="columns" type="int" value="20"/>
+                                    <Property name="rows" type="int" value="5"/>
+                                    <Property name="name" type="java.lang.String" value="sourceViewTextArea" noResource="true"/>
+                                  </Properties>
+                                </Component>
+                              </SubComponents>
+                            </Container>
+                            <Container class="javax.swing.JPanel" name="configurationResultPanel">
+                              <Properties>
+                                <Property name="name" type="java.lang.String" value="configurationResultPanel" noResource="true"/>
+                              </Properties>
+                              <Constraints>
+                                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                                  <JTabbedPaneConstraints tabName="Conf Result">
+                                    <Property name="tabTitle" type="java.lang.String" resourceKey="configurationResultPanel.TabConstraints.tabTitle"/>
+                                  </JTabbedPaneConstraints>
+                                </Constraint>
+                              </Constraints>
+
+                              <Layout>
+                                <DimensionLayout dim="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="configurationResultTreeScrollPane" alignment="0" pref="424" max="32767" attributes="0"/>
+                                              <Component id="configurationResultRefreshButton" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                </DimensionLayout>
+                                <DimensionLayout dim="1">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="configurationResultRefreshButton" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="configurationResultTreeScrollPane" pref="376" max="32767" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                </DimensionLayout>
+                              </Layout>
+                              <SubComponents>
+                                <Component class="javax.swing.JButton" name="configurationResultRefreshButton">
+                                  <Properties>
+                                    <Property name="text" type="java.lang.String" resourceKey="configurationResultRefreshButton.text"/>
+                                    <Property name="name" type="java.lang.String" value="configurationResultRefreshButton" noResource="true"/>
+                                  </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="configurationResultRefreshButtonActionPerformed"/>
+                                  </Events>
+                                </Component>
+                                <Container class="javax.swing.JScrollPane" name="configurationResultTreeScrollPane">
+                                  <Properties>
+                                    <Property name="name" type="java.lang.String" value="configurationResultTreeScrollPane" noResource="true"/>
+                                  </Properties>
+                                  <AuxValues>
+                                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                                  </AuxValues>
+
+                                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                                  <SubComponents>
+                                    <Component class="javax.swing.JTree" name="configurationResultTree">
+                                      <Properties>
+                                        <Property name="model" type="javax.swing.tree.TreeModel" editor="org.netbeans.modules.form.editors2.TreeModelEditor">
+                                          <TreeModel code=""/>
+                                        </Property>
+                                        <Property name="name" type="java.lang.String" value="configurationResultTree" noResource="true"/>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                              </SubComponents>
+                            </Container>
+                          </SubComponents>
+                        </Container>
+                        <Component class="javax.swing.JButton" name="copyLocationValueButton">
+                          <Properties>
+                            <Property name="icon" type="javax.swing.Icon" resourceKey="copyLocationValueButton.icon"/>
+                            <Property name="text" type="java.lang.String" resourceKey="copyLocationValueButton.text"/>
+                            <Property name="toolTipText" type="java.lang.String" resourceKey="copyLocationValueButton.toolTipText"/>
+                            <Property name="enabled" type="boolean" value="false"/>
+                            <Property name="name" type="java.lang.String" value="copyLocationValueButton" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="copyLocationValueButtonActionPerformed"/>
+                          </Events>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="openButton">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="openButton.font"/>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="openButton.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="openButton.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="openButton.toolTipText"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="iconTextGap" type="int" value="0"/>
+            <Property name="name" type="java.lang.String" value="openButton" noResource="true"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="openButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="saveButton">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="saveButton.font"/>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="saveButton.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="saveButton.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="saveButton.toolTipText"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="iconTextGap" type="int" value="0"/>
+            <Property name="name" type="java.lang.String" value="saveButton" noResource="true"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="newButton">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="newButton.font"/>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="newButton.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="newButton.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="newButton.toolTipText"/>
+            <Property name="enabled" type="boolean" value="false"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="iconTextGap" type="int" value="0"/>
+            <Property name="name" type="java.lang.String" value="newButton" noResource="true"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="newButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="goToAddressButton">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="goToLocationButton.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="goToLocationButton.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="goToLocationButton.toolTipText"/>
+            <Property name="name" type="java.lang.String" value="goToLocationButton" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="goToAddressButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="locationBarTextField">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="locationBarTextField.text"/>
+            <Property name="name" type="java.lang.String" value="locationBarTextField" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="locationBarTextFieldActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="appHeaderSeparator">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="appHeaderSeparator" noResource="true"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JMenuBar" name="menuBar">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="menuBar" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="fileMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="fileMenu.text"/>
+            <Property name="name" type="java.lang.String" value="fileMenu" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="newDocumentMenuItem">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+N"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="newDocumentMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="newDocumentMenuItem.text"/>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="name" type="java.lang.String" value="newDocumentMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="openDocumentMenuItem">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+O"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="openDocumentMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="openDocumentMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="openDocumentMenuItem" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="openDocumentMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="saveMenuItem">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+S"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="saveMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="saveMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="saveMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="saveAsMenuItem">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+Ctrl+S"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="saveAsMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="saveAsMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="saveAsMenuItem" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveAsMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="separator1">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="separator1" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="ParseFileMenuItem">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+Alt+P"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="ParseFileMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="ParseFileMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="ParseFileMenuItem" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ParseFileMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="ParseURLMenuItem">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+P"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="ParseURLMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="ParseURLMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="ParseURLMenuItem" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ParseURLMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="separator2">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="separator2" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="exitMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="org.jdesktop.application.Application" id="quit" methodName="quit"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="exitMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="exitMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="exitMenuItem" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+              </AuxValues>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="editMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="editMenu.text"/>
+            <Property name="name" type="java.lang.String" value="editMenu" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="preferencesMenuItem">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="preferencesMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="preferencesMenuItem.text"/>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="name" type="java.lang.String" value="preferencesMenuItem" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="preferencesMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="alterSourceMenuItem">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="alterSourceMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="alterSourceMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="alterSourceMenuItem" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="alterSourceMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="urlFilterMEnuItem">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="urlFilterMEnuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="urlFilterMEnuItem.text"/>
+                <Property name="name" type="java.lang.String" value="urlFilterMEnuItem" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="urlFilterMEnuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="viewMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="viewMenu.text"/>
+            <Property name="name" type="java.lang.String" value="viewMenu" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="refreshMenuItem">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+R"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="refreshMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="refreshMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="refreshMenuItem" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="refreshMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="helpMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="helpMenu.text"/>
+            <Property name="name" type="java.lang.String" value="helpMenu" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="aboutMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="org.emje.treehtmlparse.TreeHTMLParseView" id="showAboutBox" methodName="showAboutBox"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="aboutMenuItem" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+              </AuxValues>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="statusPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="statusPanel" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="statusPanelSeparator" alignment="0" pref="681" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="statusMessageLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="430" max="32767" attributes="0"/>
+                  <Component id="progressBar" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="statusAnimationLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="statusPanelSeparator" min="-2" pref="2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="statusMessageLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="statusAnimationLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="progressBar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JSeparator" name="statusPanelSeparator">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="statusPanelSeparator" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="statusMessageLabel">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="statusMessageLabel.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="statusMessageLabel.text"/>
+            <Property name="enabled" type="boolean" value="false"/>
+            <Property name="name" type="java.lang.String" value="statusMessageLabel" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="statusAnimationLabel">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="name" type="java.lang.String" value="statusAnimationLabel" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JProgressBar" name="progressBar">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="progressBar" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="component" type="javax.swing.JComponent" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="mainPanel"/>
+    </Property>
+    <Property name="menuBar" type="javax.swing.JMenuBar" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="menuBar"/>
+    </Property>
+    <Property name="statusBar" type="javax.swing.JComponent" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="statusPanel"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-42,0,0,2,-87"/>
+  </AuxValues>
+</Form>
